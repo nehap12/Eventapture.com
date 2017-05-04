@@ -1,0 +1,5 @@
+/*styles for header content only*/
+.header {
+    height: 25px;
+    border: 1px solid red;
+}

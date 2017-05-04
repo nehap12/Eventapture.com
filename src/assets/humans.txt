@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  <name> -- <role> -- <twitter>
+
+# THANKS
+
+  <name>
+  AnasFirdousi -- @AnasFirdousi
+  AngularBase -- @AnasFirdousi
+
+# TECHNOLOGY COLOPHON
+
+  Angular2, TypeScript, Webpack
+  HTML5, CSS3
+

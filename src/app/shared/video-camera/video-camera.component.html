@@ -1,0 +1,22 @@
+<!--<div>-->
+  <!--<h1>Hello am video</h1>-->
+  <!--<ul id="snap-album">-->
+
+  <!--</ul>-->
+  <!--<video [width]="width" [height]="height" (click)="takeSnapshot()"></video>-->
+  <!--&lt;!&ndash;<button class="btn btn-failure" (click)="stopSnapshot()">Close</button>&ndash;&gt;-->
+<!--</div>-->
+
+
+<div class="row">
+  <div class="col-xs-12">
+    <video #video class="video"></video>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <button md-raised-button color="primary" (click)="startRecording()"> Record </button>
+    <button md-raised-button color="primary"(click) ="stopRecording()"> Stop</button>
+    <button md-raised-button color="primary" (click)="download()"> Download</button>
+  </div>
+</div>

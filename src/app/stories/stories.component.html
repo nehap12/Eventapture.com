@@ -1,0 +1,139 @@
+<div class="container stories-container">
+  <div class="row">
+    <div class="col">
+      <stories-heading-component [text]="headline"></stories-heading-component>
+      <map-component [updates]="mapUpdates"></map-component>
+    </div>
+    <div class="col">
+      <h2>{{question}}</h2>
+      <ul id="story-vote">
+        <li *ngFor="let answer of answers" name="question" value="{{answer}}" style="text-align: left;" >
+          <input type="radio" name="question" value="Yes">{{answer.answer}} <span class="post-tags"> {{ answer.count}}</span>
+        </li>
+        <!--<li>-->
+          <!--<input type="radio" name="question" value="Yes">Yes he will !-->
+        <!--</li>-->
+        <!--<li>-->
+          <!--<input type="radio" name="question"  value="No">No never!-->
+        <!--</li>-->
+        <!--<li>-->
+          <!--<input type="radio" name="question"  value="maybe">May be-->
+        <!--</li>-->
+        <li>
+          <button type="button" class="btn btn-primary">Cast Your Vote</button>
+        </li>
+      </ul>
+      <ul id="insights">
+        <li>
+            Insights
+        </li>
+        <li>
+          <img src="../../assets/img/when.png" alt="">
+          23 Days 4 hour 45mins
+        </li>
+        <li>
+          <img src="../../assets/img/headcount.png" alt="">
+          32,427 - <b>M </b>23989 <b>F</b> 8400 <b>U</b> 38
+        </li>
+        <li>
+          <img src="../../assets/img/location-pin.png" alt="">
+          19 states - <b>#1</b>  California
+        </li>
+      </ul>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col" style="width: 730px">
+      <ul id="user-videos">
+        <li>
+          Watch
+        </li>
+        <li>
+          <ul class="thumbnails" style="padding-left: 0;">
+            <!--<li class="span4" style="background: none;">-->
+                  <!--<iframe class="" src="//www.youtube.com/embed/8wqtwkmsBvc" frameborder="0"></iframe>-->
+            <!--</li>-->
+            <li class="span4" style="background: none;">
+              <iframe class="" src="//www.youtube.com/embed/7-DWFslQlXU" frameborder="0"></iframe>
+            </li>
+            <li class="span4">
+              <iframe class="" src="//www.youtube.com/embed/nATSjEeDCnM" frameborder="0"></iframe>
+
+            </li>
+            <li class="span4">
+              <iframe class="" src="//www.youtube.com/embed/lVmPgAFvcAk" frameborder="0"></iframe>
+
+            </li>
+            <li class="span4">
+              <iframe class="" src="//www.youtube.com/embed/xfmYqjN6Jh4" frameborder="0"></iframe>
+
+            </li>
+            <li class="span4">
+              <iframe class="" src="//www.youtube.com/embed/iGEIto1UJAI" frameborder="0"></iframe>
+            </li>
+
+          </ul>
+
+        </li>
+      </ul>
+    </div>
+
+
+  </div>
+  <div class="row">
+    <div class="col" style="width: 730px">
+      <ul id="user-comments">
+        <li style="padding: 20px 10px">
+          Snap
+          <span style="float: right;">
+            <a (click)="openCamera()" [hidden]="openCameraRecording" class="btn btn-success" style="cursor: pointer; color:#fff; font-weight: bold; ">+</a>
+            <a (click)="closeCamera()"[hidden]="!openCameraRecording" class="btn btn-success" style="cursor: pointer; color:#fff; font-weight: bold; ">-</a>
+          </span>
+        </li>
+        <li>
+          <div [hidden]="!openCameraRecording">
+              <app-snapshot-camera [width]="600" [height]="400" [openCamera]="openCameraRecording"></app-snapshot-camera>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col" style="width: 730px">
+      <ul id="user-video-comments" style=" list-style: none; padding-left: 0; ">
+        <li style=" background-color: #444444;color: #fff;padding: 20px 10px;">
+          Record a Video
+          <span style="float: right;">
+            <a (click)="openVideoCamera()" [hidden]="openVideoCameraRecording" class="btn btn-success" style="cursor: pointer; color:#fff; font-weight: bold; ">+</a>
+            <a (click)="closeVideoCamera()"[hidden]="!openVideoCameraRecording" class="btn btn-success" style="cursor: pointer; color:#fff; font-weight: bold; ">-</a>
+          </span>
+        </li>
+        <li>
+          <div [hidden]="!openVideoCameraRecording">
+            <app-video-camera></app-video-camera>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col" style="width: 730px">
+      <ul id="user-text-comments" style=" list-style: none; padding-left: 0; ">
+        <li style=" background-color: #444444;color: #fff;padding: 20px 10px;">
+          Comment
+          <span style="float: right;">
+            <a  class="btn btn-success" style="cursor: pointer; color:#fff; font-weight: bold; ">+</a>
+            <a  class="btn btn-success" style="cursor: pointer; color:#fff; font-weight: bold; ">-</a>
+          </span>
+        </li>
+        <li>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+

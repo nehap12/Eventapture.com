@@ -1,0 +1,463 @@
+
+<div class="section-home-posts">
+
+    <div class="posts clearfix">
+
+        <sectional-card *ngFor="let story of stories; let i = index" [downward]="story.downward" [upward]="story.upward" [headline]="story.headline" [tags]="story.personalityTag" [image]="story.imageURL" [graph]="i"></sectional-card>
+
+        <!--<div class="post tag-tech">-->
+            <!--<a href="#" class="story-image">-->
+                <!--<div class="featured-image " style="background-image:url(../../assets/img/trump-kim-jon-ung.jpg)">-->
+                    <!--&lt;!&ndash;<span class="rating-tag"><a href="#">8.7</a></span>&ndash;&gt;-->
+                    <!--<span class="story-status-tag live"><a href="#">Live</a></span>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<section class="post-info">-->
+                <!--<span class="post-tags"><a href="#">Politics</a></span>-->
+                <!--<span class="post-tags"><a href="#">Donald Trump</a></span>-->
+                <!--<span class="post-tags"><a href="#">USA</a></span>-->
+                <!--<h2 class="post-title">-->
+                    <!--<a href="#"><span class="ellip">Trump: US will act unilaterally on North Korea if necessary</span></a>-->
+                <!--</h2>-->
+                <!--<div class="post-meta">-->
+                    <!--<div style="position: relative; border: none">-->
+                       <!--<div class="" style="width:60%; position: absolute; top: 0; left:0">-->
+                           <!--<span style="text-transform:none;">Popularity graph</span>-->
+                           <!--<svg id="charttest1"></svg>-->
+                       <!--</div>-->
+                       <!--<div style="border: none; width:35%; height: 112px; position: absolute; top: 0; right:0; font-weight:normal;">-->
+                           <!--<span style="font-size: 24px; position:absolute;right:0;">-->
+                                <!--24.5% <span style="color:#66b266">&#x25B2;</span> <br>-->
+                               <!--40.6% <span style="color:#ff4c4c">&#x25BC;</span> <br>-->
+                           <!--</span>-->
+                           <!--<a routerLink="/stories/23454314352323" routerLinkActive="active" style="text-transform: none;padding: 5px 10px;border: 1px solid #01bcd4;margin: 10px 0 0 15px;position: absolute;right: 0;bottom: 0;">Find More</a>-->
+                       <!--</div>-->
+                   <!--</div>-->
+                <!--</div>-->
+            <!--</section>-->
+        <!--</div>-->
+        <!--<div class="post tag-food">-->
+            <!--<a href="#">-->
+                <!--<div class="featured-image" style="background-image:url(../../assets/img/israel-palestine.jpg)">-->
+                    <!--<span class="story-status-tag live"><a href="#">Live</a></span>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<section class="post-info">-->
+                <!--<span class="post-tags"><a href="#">politics</a></span>-->
+                <!--<span class="post-tags"><a href="#">Palestine</a></span>-->
+                <!--<span class="post-tags"><a href="#">Israel</a></span>-->
+
+                <!--<h2 class="post-title">-->
+                    <!--<a href="#"><span class="ellip">Israel approves first new West Bank settlement in 20 years</span></a>-->
+                <!--</h2>-->
+
+                <!--<div class="post-meta">-->
+                    <!--<<div style="position: relative; border: none">-->
+                    <!--<div class="" style="width:60%; position: absolute; top: 0; left:0">-->
+                        <!--<span style="text-transform:none;">Popularity graph</span>-->
+                        <!--<svg id="charttest2"></svg>-->
+                    <!--</div>-->
+                    <!--<div style="border: none; width:35%; height: 112px; position: absolute; top: 0; right:0; font-weight:normal;">-->
+                           <!--<span style="font-size: 24px; position:absolute;right:0;">-->
+                                <!--24.5% <span style="color:#34a853">&#x25B2;</span> <br>-->
+                               <!--40.6% <span style="color:#ea4335">&#x25BC;</span> <br>-->
+                           <!--</span>-->
+                        <!--<a href="#" style="    text-transform: none;padding: 5px 10px;border: 1px solid #01bcd4;margin: 10px 0 0 15px;position: absolute;right: 0;bottom: 0;">Find More</a>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+            <!--</section>-->
+
+        <!--</div>-->
+        <!--<div class="post tag-tech">-->
+            <!--<a href="#">-->
+                <!--<div class="featured-image" style="background-image:url(../../assets/img/theresa-may.jpg)">-->
+                    <!--<span class="story-status-tag live"><a href="#">Live</a></span>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<section class="post-info">-->
+                <!--<span class="post-tags"><a href="#">politics</a></span>-->
+                <!--<span class="post-tags"><a href="#">UK</a></span>-->
+
+                <!--<h2 class="post-title">-->
+                    <!--<a href="#"><span class="ellip">Theresa May's Empty Brexit Promises</span></a>-->
+                <!--</h2>-->
+
+                <!--<div class="post-meta">-->
+                    <!--<div style="position: relative; border: none">-->
+                        <!--<div class="" style="width:60%; position: absolute; top: 0; left:0">-->
+                            <!--<span style="text-transform:none;">Popularity graph</span>-->
+                            <!--<svg id="charttest3"></svg>-->
+                        <!--</div>-->
+                        <!--<div style="border: none; width:35%; height: 112px; position: absolute; top: 0; right:0; font-weight:normal;">-->
+                           <!--<span style="font-size: 24px; position:absolute;right:0;">-->
+                                <!--24.5% <span style="color:#34a853">&#x25B2;</span> <br>-->
+                               <!--40.6% <span style="color:#ea4335">&#x25BC;</span> <br>-->
+                           <!--</span>-->
+                            <!--<a href="#" style="    text-transform: none;padding: 5px 10px;border: 1px solid #01bcd4;margin: 10px 0 0 15px;position: absolute;right: 0;bottom: 0;">Find More</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</section>-->
+
+        <!--</div>-->
+
+        <!--<div class="post tag-interview tag-fashion featured">-->
+            <!--<a href="#">-->
+                <!--<div class="featured-image" style="background-image:url(../../assets/img/paul-ryan.jpg)">-->
+                    <!--<span class="story-status-tag live"><a href="#">Live</a></span>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<section class="post-info">-->
+                <!--<span class="post-tags"><a href="#">politics</a> | <a href="#">Fashion</a></span>-->
+
+                <!--<h2 class="post-title">-->
+                    <!--<a href="#"><span class="ellip">Campaigners seek 'to sell US politicians' browsing data'</span></a>-->
+                <!--</h2>-->
+
+                <!--<div class="post-meta">-->
+                    <!--<div style="position: relative; border: none">-->
+                        <!--<div class="" style="width:60%; position: absolute; top: 0; left:0">-->
+                            <!--<span style="text-transform:none;">Popularity graph</span>-->
+                            <!--<svg id="charttest4"></svg>-->
+                        <!--</div>-->
+                        <!--<div style="border: none; width:35%; height: 112px; position: absolute; top: 0; right:0; font-weight:normal;">-->
+                           <!--<span style="font-size: 24px; position:absolute;right:0;">-->
+                                <!--24.5% <span style="color:#34a853">&#x25B2;</span> <br>-->
+                               <!--40.6% <span style="color:#ea4335">&#x25BC;</span> <br>-->
+                           <!--</span>-->
+                            <!--<a href="#" style="    text-transform: none;padding: 5px 10px;border: 1px solid #01bcd4;margin: 10px 0 0 15px;position: absolute;right: 0;bottom: 0;">Find More</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</section>-->
+
+        <!--</div>-->
+        <!--<div class="post tag-editorial featured">-->
+            <!--<a href="#">-->
+                <!--<div class="featured-image" style="background-image:url(../../assets/img/ivanka-trump.jpg)">-->
+                    <!--<span class="story-status-tag live"><a href="#">Live</a></span>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<section class="post-info">-->
+                <!--<span class="post-tags"><a href="#">politics</a></span>-->
+                <!--<span class="post-tags"><a href="#">Ivanka Trump</a></span>-->
+                <!--<span class="post-tags"><a href="#">Trump</a></span>-->
+
+                <!--<h2 class="post-title">-->
+                    <!--<a href="#"><span class="ellip">-->
+                        <!--Ivanka Trump is making her White House job official-->
+                    <!--</span></a>-->
+                <!--</h2>-->
+
+                <!--<div class="post-meta">-->
+                    <!--<div style="position: relative; border: none">-->
+                        <!--<div class="" style="width:60%; position: absolute; top: 0; left:0">-->
+                            <!--<span style="text-transform:none;">Popularity graph</span>-->
+                            <!--<svg id="charttest5"></svg>-->
+                        <!--</div>-->
+                        <!--<div style="border: none; width:35%; height: 112px; position: absolute; top: 0; right:0; font-weight:normal;">-->
+                           <!--<span style="font-size: 24px; position:absolute;right:0;">-->
+                                <!--24.5% <span style="color:#34a853">&#x25B2;</span> <br>-->
+                               <!--40.6% <span style="color:#ea4335">&#x25BC;</span> <br>-->
+                           <!--</span>-->
+                            <!--<a href="#" style="    text-transform: none;padding: 5px 10px;border: 1px solid #01bcd4;margin: 10px 0 0 15px;position: absolute;right: 0;bottom: 0;">Find More</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</section>-->
+
+        <!--</div>-->
+        <!--<div class="post tag-food">-->
+            <!--<a href="#">-->
+                <!--<div class="featured-image" style="background-image:url(../../assets/img/charlie-baker.jpg)">-->
+                    <!--<span class="story-status-tag live"><a href="#">Live</a></span>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<section class="post-info">-->
+                <!--<span class="post-tags"><a href="#">politics</a></span>-->
+                <!--<span class="post-tags"><a href="#">america</a></span>-->
+                <!--<span class="post-tags"><a href="#">health care</a></span>-->
+                <!--<span class="post-tags"><a href="#">charlie baker</a></span>-->
+
+                <!--<h2 class="post-title">-->
+                    <!--<a href="#"><span class="ellip">Republicans not yet ready to abandon health care</span></a>-->
+                <!--</h2>-->
+
+                <!--<div class="post-meta">-->
+                    <!--<div style="position: relative; border: none">-->
+                        <!--<div class="" style="width:60%; position: absolute; top: 0; left:0">-->
+                            <!--<span style="text-transform:none;">Popularity graph</span>-->
+                            <!--<svg id="charttest6"></svg>-->
+                        <!--</div>-->
+                        <!--<div style="border: none; width:35%; height: 112px; position: absolute; top: 0; right:0; font-weight:normal;">-->
+                           <!--<span style="font-size: 24px; position:absolute;right:0;">-->
+                                <!--24.5% <span style="color:#34a853">&#x25B2;</span> <br>-->
+                               <!--40.6% <span style="color:#ea4335">&#x25BC;</span> <br>-->
+                           <!--</span>-->
+                            <!--<a href="#" style="    text-transform: none;padding: 5px 10px;border: 1px solid #01bcd4;margin: 10px 0 0 15px;position: absolute;right: 0;bottom: 0;">Find More</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</section>-->
+
+        <!--</div>-->
+        <!--<div class="post tag-travel">-->
+            <!--<a href="#">-->
+                <!--<div class="featured-image" style="background-image:url(../../assets/img/carter-page-ex-trump-advisor.jpg)">-->
+                    <!--<span class="story-status-tag live"><a href="#">Live</a></span>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<section class="post-info">-->
+                <!--<span class="post-tags"><a href="#">politics</a></span>-->
+                <!--<span class="post-tags"><a href="#">trump</a></span>-->
+                <!--<span class="post-tags"><a href="#">russian ties</a></span>-->
+                <!--<span class="post-tags"><a href="#">trump</a></span>-->
+                <!--<span class="post-tags"><a href="#">carter page</a></span>-->
+
+                <!--<h2 class="post-title">-->
+                    <!--<a href="#"><span class="ellip">-->
+                        <!--Ex-Trump adviser Carter Page rips 'false narrative' on Russia collusion-->
+                    <!--</span></a>-->
+                <!--</h2>-->
+
+                <!--<div class="post-meta">-->
+                    <!--<div style="position: relative; border: none">-->
+                        <!--<div class="" style="width:60%; position: absolute; top: 0; left:0">-->
+                            <!--<span style="text-transform:none;">Popularity graph</span>-->
+                            <!--<svg id="charttest7"></svg>-->
+                        <!--</div>-->
+                        <!--<div style="border: none; width:35%; height: 112px; position: absolute; top: 0; right:0; font-weight:normal;">-->
+                           <!--<span style="font-size: 24px; position:absolute;right:0;">-->
+                                <!--24.5% <span style="color:#34a853">&#x25B2;</span> <br>-->
+                               <!--40.6% <span style="color:#ea4335">&#x25BC;</span> <br>-->
+                           <!--</span>-->
+                            <!--<a href="#" style="    text-transform: none;padding: 5px 10px;border: 1px solid #01bcd4;margin: 10px 0 0 15px;position: absolute;right: 0;bottom: 0;">Find More</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</section>-->
+
+        <!--</div>-->
+        <!--<div class="post tag-fashion featured">-->
+            <!--<a href="#">-->
+                <!--<div class="featured-image" style="background-image:url(../../assets/img/joe-biden.jpg)">-->
+                    <!--<span class="story-status-tag live"><a href="#">Live</a></span>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<section class="post-info">-->
+                <!--<span class="post-tags"><a href="#">politics</a></span>-->
+
+                <!--<h2 class="post-title">-->
+                    <!--<a href="#"><span class="ellip">Biden says 9 Republicans admitted to him opposing Garland was wrong</span></a>-->
+                <!--</h2>-->
+
+                <!--<div class="post-meta">-->
+                    <!--<div style="position: relative; border: none">-->
+                        <!--<div class="" style="width:60%; position: absolute; top: 0; left:0">-->
+                            <!--<span style="text-transform:none;">Popularity graph</span>-->
+                            <!--<svg id="charttest8"></svg>-->
+                        <!--</div>-->
+                        <!--<div style="border: none; width:35%; height: 112px; position: absolute; top: 0; right:0; font-weight:normal;">-->
+                           <!--<span style="font-size: 24px; position:absolute;right:0;">-->
+                                <!--24.5% <span style="color:#34a853">&#x25B2;</span> <br>-->
+                               <!--40.6% <span style="color:#ea4335">&#x25BC;</span> <br>-->
+                           <!--</span>-->
+                            <!--<a href="#" style="    text-transform: none;padding: 5px 10px;border: 1px solid #01bcd4;margin: 10px 0 0 15px;position: absolute;right: 0;bottom: 0;">Find More</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</section>-->
+
+        <!--</div>-->
+        <!--<div class="post tag-editorial tag-tech">-->
+            <!--<a href="#">-->
+                <!--<div class="featured-image" style="background-image:url(../../assets/img/neil-gorsuch.jpg)">-->
+                    <!--<span class="story-status-tag live"><a href="#">Live</a></span>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<section class="post-info">-->
+                <!--<span class="post-tags"><a href="#">politics</a></span>-->
+                <!--<span class="post-tags"><a href="#">neil gorsuch</a></span>-->
+                <!--<span class="post-tags"><a href="#">trump</a></span>-->
+                <!--<span class="post-tags"><a href="#">napolitano</a></span>-->
+
+                <!--<h2 class="post-title">-->
+                    <!--<a href="#"><span class="ellip">Napolitano: What's happening to Gorsuch is unprecedented</span></a>-->
+                <!--</h2>-->
+
+                <!--<div class="post-meta">-->
+                    <!--<div style="position: relative; border: none">-->
+                        <!--<div class="" style="width:60%; position: absolute; top: 0; left:0">-->
+                            <!--<span style="text-transform:none;">Popularity graph</span>-->
+                            <!--<svg id="charttest9"></svg>-->
+                        <!--</div>-->
+                        <!--<div style="border: none; width:35%; height: 112px; position: absolute; top: 0; right:0; font-weight:normal;">-->
+                           <!--<span style="font-size: 24px; position:absolute;right:0;">-->
+                                <!--24.5% <span style="color:#34a853">&#x25B2;</span> <br>-->
+                               <!--40.6% <span style="color:#ea4335">&#x25BC;</span> <br>-->
+                           <!--</span>-->
+                            <!--<a href="#" style="    text-transform: none;padding: 5px 10px;border: 1px solid #01bcd4;margin: 10px 0 0 15px;position: absolute;right: 0;bottom: 0;">Find More</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</section>-->
+
+        <!--</div>-->
+        <!--<div class="post tag-travel">-->
+            <!--<a href="#">-->
+                <!--<div class="featured-image" style="background-image:url(../../assets/img/neil-gorsuch-trump.jpg)">-->
+                    <!--<span class="story-status-tag live"><a href="#">Live</a></span>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<section class="post-info">-->
+                <!--<span class="post-tags"><a href="#">politics</a></span>-->
+                <!--<span class="post-tags"><a href="#">manchin</a></span>-->
+                <!--<span class="post-tags"><a href="#">heitkamp</a></span>-->
+                <!--<span class="post-tags"><a href="#">US senate</a></span>-->
+                <!--<span class="post-tags"><a href="#">gorsuch</a></span>-->
+
+                <!--<h2 class="post-title">-->
+                    <!--<a href="#"><span class="ellip">-->
+                        <!--Manchin, Heitkamp become first Senate Dems to back Gorsuch-->
+                    <!--</span></a>-->
+                <!--</h2>-->
+
+                <!--<div class="post-meta">-->
+                    <!--<div style="position: relative; border: none">-->
+                        <!--<div class="" style="width:60%; position: absolute; top: 0; left:0">-->
+                            <!--<span style="text-transform:none;">Popularity graph</span>-->
+                            <!--<svg id="charttest10"></svg>-->
+                        <!--</div>-->
+                        <!--<div style="border: none; width:35%; height: 112px; position: absolute; top: 0; right:0; font-weight:normal;">-->
+                           <!--<span style="font-size: 24px; position:absolute;right:0;">-->
+                                <!--24.5% <span style="color:#34a853">&#x25B2;</span> <br>-->
+                               <!--40.6% <span style="color:#ea4335">&#x25BC;</span> <br>-->
+                           <!--</span>-->
+                            <!--<a href="#" style="    text-transform: none;padding: 5px 10px;border: 1px solid #01bcd4;margin: 10px 0 0 15px;position: absolute;right: 0;bottom: 0;">Find More</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</section>-->
+
+        <!--</div>-->
+        <!--<div class="post tag-travel">-->
+            <!--<a href="#">-->
+                <!--<div class="featured-image" style="background-image:url(../../assets/img/hungarian-prime-minister.jpg)">-->
+                    <!--<span class="story-status-tag live"><a href="#">Live</a></span>-->
+                <!--</div>-->
+            <!--</a>-->
+            <!--<section class="post-info">-->
+                <!--<span class="post-tags"><a href="#">politics</a></span>-->
+                <!--<span class="post-tags"><a href="#">europe</a></span>-->
+                <!--<span class="post-tags"><a href="#">hungary</a></span>-->
+                <!--<span class="post-tags"><a href="#">george soros-founded school</a></span>-->
+
+                <!--<h2 class="post-title">-->
+                    <!--<a href="#"><span class="ellip">Hungarian leader lashes out at George Soros-founded school</span></a>-->
+                <!--</h2>-->
+
+                <!--<div class="post-meta">-->
+                    <!--<div style="position: relative; border: none">-->
+                        <!--<div class="" style="width:60%; position: absolute; top: 0; left:0">-->
+                            <!--<span style="text-transform:none;">Popularity graph</span>-->
+                            <!--<svg id="charttest11"></svg>-->
+                        <!--</div>-->
+                        <!--<div style="border: none; width:35%; height: 112px; position: absolute; top: 0; right:0; font-weight:normal;">-->
+                           <!--<span style="font-size: 24px; position:absolute;right:0;">-->
+                                <!--24.5% <span style="color:#34a853">&#x25B2;</span> <br>-->
+                               <!--40.6% <span style="color:#ea4335">&#x25BC;</span> <br>-->
+                           <!--</span>-->
+                            <!--<a href="#" style="    text-transform: none;padding: 5px 10px;border: 1px solid #01bcd4;margin: 10px 0 0 15px;position: absolute;right: 0;bottom: 0;">Find More</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</section>-->
+
+        <!--</div>-->
+
+
+    </div>
+
+    <div class="sidebar">
+        <section class="featured-posts">
+            <h3>Top stories</h3>
+            <ul>
+                <li class="clearfix">
+                    <a href="#">
+                        <div class="featured-image" style="background-image:url(../../assets/img/trump-putin.jpg);">
+                        </div>
+                    </a>
+                    <span class="post-tags"><a href="#">politics</a></span>
+                    <a class="title" href="#">Trump - Russia ties : Investigation</a>
+                </li>
+                <li class="clearfix">
+                    <a href="#">
+                        <div class="featured-image" style="background-image:url(../../assets/img/paul-ryan.jpg);"></div>
+                    </a>
+                    <span class="post-tags"><a href="#">politics</a></span>
+                    <a class="title" href="#">Campaigners seek 'to sell US politicians' browsing data'</a>
+                </li>
+                <li class="clearfix">
+                    <a href="#">
+                        <div class="featured-image" style="background-image:url(../../assets/img/paul-ryan.jpg);"></div>
+                    </a>
+                    <span class="post-tags"><a href="#">politics</a></span>
+                    <a class="title" href="#">The Made-in-Ukraine Movement Is a Fashion Revolution</a>
+                </li>
+                <li class="clearfix">
+                    <a href="#">
+                        <div class="featured-image" style="background-image:url(../../assets/img/paul-ryan.jpg);"></div>
+                    </a>
+                    <span class="post-tags"><a href="#">politics</a></span>
+                    <a class="title" href="#">Beginning of the end of passport-free travel in Europe?</a>
+                </li>
+            </ul>
+        </section>
+
+
+        <section class="recent-posts widget">
+            <h3>Latest stories</h3>
+            <ul>
+                <li class="clearfix">
+                    <a href="#">
+                        <div class="featured-image" style="background-image:url(../../assets/img/paul-ryan.jpg);"></div>
+                    </a>
+                    <span class="post-tags"><a href="#">politics</a></span>
+                    <div class="title-wrapper">
+                        <a class="title" href="#">Making Computer Science More Inviting: A Look at What Works</a>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <a href="#">
+                        <div class="featured-image" style="background-image:url(../../assets/img/paul-ryan.jpg);"></div>
+                    </a>
+                    <span class="post-tags"><a href="#">politics</a></span>
+                    <div class="title-wrapper">
+                        <a class="title" href="#">Deciphering Italian Breads: Beyond Ciabatta and Pizza Bianca</a>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <a href="#">
+                        <div class="featured-image" style="background-image:url(../../assets/img/paul-ryan.jpg);"></div>
+                    </a>
+                    <span class="post-tags"><a href="#">politics</a></span>
+                    <div class="title-wrapper">
+                        <a class="title" href="#">Jess Campbell: On Film, on Fashion, on Refusing to Say Her Own Name</a>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <a href="#">
+                        <div class="featured-image" style="background-image:url(../../assets/img/paul-ryan.jpg);"></div>
+                    </a>
+                    <span class="post-tags"><a href="#">politics</a></span>
+                    <div class="title-wrapper">
+                        <a class="title" href="#">The dark side to Uber's unstoppable cash grab</a>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </div>
+
+</div>

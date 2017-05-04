@@ -1,0 +1,9 @@
+/*styles for header content only*/
+.react {
+    /*height: 32px;*/
+    /*width: 40px;*/
+    border: none;
+    padding: 7.5px;
+    background-color: #39ce86;
+    color: #ffffff;
+}

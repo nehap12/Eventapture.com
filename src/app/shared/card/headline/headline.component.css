@@ -1,0 +1,24 @@
+/*styles for header content only*/
+
+headline {
+    z-index: 1000;
+    position: absolute;
+    top: 140px;
+    color:#24aae2;
+}
+
+.headline-2-stretch{
+    width: 560px;
+}
+
+.headline-3-stretch{
+    width: 446px;
+}
+
+h4{
+    color:#ffffff;
+    line-height: 30px;
+    padding: 10px;
+    background-color: #000000;
+    opacity: 0.5;
+}
